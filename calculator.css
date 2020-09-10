@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#screen {
+    position: relative;
+    border: 1px solid gray;
+    height: 80px;
+    margin-bottom: 50px;
+    display:flex;
+    align-items: center;
+}
+#onScreen {
+    font-size: 30px
+}
+#onResult {
+    font-size: 25px;
+    position: absolute;
+    right: 0px;
+}
+#btn-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+}
+#equal, #cancel {
+    grid-column-start: 6;
+    grid-column-end: 8;
+    width: 146px;
+}
+#equal {
+    background-color: lightskyblue;
+}
+#cancel {
+    background-color: lightsalmon;
+}
+#ans {
+    grid-row-start: 4;
+    grid-row-end: 6;
+    height: 146px;
+}
+.special, .btn {
+    margin: 3px;
+    width: 70px;
+    height: 70px;
+    background-color: lightgray;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.special:hover, .btn:hover {
+    cursor: pointer;
+    transform: scale(1.05,1.05)
+}
+.num {
+    background-color: bisque;
+}
+.equal {
+    background-color: lightskyblue;
+}
